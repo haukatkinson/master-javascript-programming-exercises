@@ -1,3 +1,8 @@
 function removeProperty(obj, key) {
-  // your code here
+  const obj = {
+    name: 'Sam',
+    age: 20
+}
+removeProperty(obj,'name')
+console.log(obj.name)
 }
