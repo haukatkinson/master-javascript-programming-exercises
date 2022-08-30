@@ -1,5 +1,7 @@
 function addToFrontOfNew(arr, element) {
-    // Write your function here
+    let shift = arr.slice()
+    shift.unshift(element)
+    return shift
     
 }
 

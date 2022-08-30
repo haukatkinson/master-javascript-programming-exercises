@@ -1,5 +1,7 @@
 function addToBackOfNew(arr, element) {
-    // Write your function here
+    let shift = arr.slice()
+    shift.push(element)
+    return shift
     
 }
 
