@@ -3,7 +3,9 @@ let obj = {
 };
 
 function getOddElementsAtProperty(obj, key) {
-    // your code here
+    return obj[key].filter(function(item){
+      return item%2!==0
+    })
 }
 
 let output = getOddElementsAtProperty(obj, 'key');
