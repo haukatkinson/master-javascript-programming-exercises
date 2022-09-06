@@ -1,5 +1,8 @@
 function getLargestElement(arr) {
-  // your code here
+  let largeEl = arr.sort(function(a, b){
+    return b - a
+  })
+  return largeEl[0]
   
 }
 

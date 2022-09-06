@@ -3,7 +3,10 @@ let obj = {
 };
 
 function getSumOfAllElementsAtProperty(obj, key) {
-    // your code here
+    
+    return obj[key].reduce(function(a,b){
+        return a + b
+    })
 }
 let output = getSumOfAllElementsAtProperty(obj, 'key');
 console.log(output); // --> 13

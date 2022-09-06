@@ -1,5 +1,19 @@
 function detectOutlierValue(string) {
-    // your code here
+    let arr = string.split
+    let even = [];
+    let odd = [];
+    for(var i = 0; i < string.length; i++){
+        if(string[i]%2==0){
+            even.push(string[i])
+        } else if(string[i]%2!=0){
+            odd.push(string[i])
+        }
+    }
+    if(even.length < odd.length){
+        return even
+    } else if(odd.length < even.length){
+        return odd
+    }
 }
 
 // Third number is odd, while the rest of the numbers are even

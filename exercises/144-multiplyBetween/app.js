@@ -1,5 +1,9 @@
 function multiplyBetween(num1, num2) {
-    // your code here
+    let sum = 1
+    for(var i = num1; i < num2; i++){
+        sum = sum * i
+    }
+    return sum
 }
 
 let output = multiplyBetween(2, 5);

@@ -1,5 +1,8 @@
 function findSmallestElement(arr) {
-    // your code here
+    let smallEl = arr.sort(function(a, b){
+        return a - b
+    })
+    return smallEl[0]
 
 }
 

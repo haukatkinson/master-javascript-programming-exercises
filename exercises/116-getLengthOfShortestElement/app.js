@@ -1,5 +1,8 @@
 function getLengthOfShortestElement(arr) {
-    // your code here
+    let space = arr.sort(function(a, b){
+        a.length - b.length
+    })
+    return space[0]
     
 }
 let output = getLengthOfShortestElement(['one', 'two', 'three']);
